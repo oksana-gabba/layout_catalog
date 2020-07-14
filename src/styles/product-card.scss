@@ -1,7 +1,7 @@
 .product-card {
   width: 200px;
   height: 403px;
-  padding: 30px 14px 14px;
+  padding: 18px 14px 14px;
   margin-bottom: 50px;
   background: #fff;
   border: 1px solid #f3f3f3;
@@ -13,18 +13,20 @@
   }
 
   &__img {
-    width: 160px;
-    height: 134px;
+    width: 164px;
+    height: 158px;
+    padding: 12px 2px;
     cursor: pointer;
     transition: transform 1s ease-in-out;
 
     &:hover {
       transform: scale(1.2);
+      outline: 3px solid #f3f3f3;
     }
   }
 
   &__title {
-    margin-top: 45px;
+    margin-top: 33px;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -61,19 +63,19 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background: $color-primary;
+    background-color: $color-primary;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
     color: #fff;
-    transition: border, background-color, color 1s ease-in-out;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
 
     &:hover {
       border: 1px solid $color-primary;
-      background-color: #fff;
       color: $color-primary;
+      background-color: #fff;
     }
   }
 }
