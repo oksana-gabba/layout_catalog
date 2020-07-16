@@ -7,9 +7,17 @@ body {
 }
 
 .product-card-wrapper {
-  width: 944px;
-  margin: 50px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 48px;
+  justify-content: center;
+
+  @media (max-width: 996px) {
+    grid-template-columns: repeat(3, 200px);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 200px);
+  }
 }
